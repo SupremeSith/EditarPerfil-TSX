@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './App.css'; // Importando o arquivo CSS
 
 const App: React.FC = () => {
   const [name, setName] = useState('');
@@ -14,19 +14,21 @@ const App: React.FC = () => {
   };
 
   // Função para trocar a imagem de perfil
+  // Basta Vc Clicr na Foto de Perfil e Trocar de Acordo com Seus Arquivos
   const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
-      const selectedImage = URL.createObjectURL(event.target.files[0]); 
+      const selectedImage = URL.createObjectURL(event.target.files[0]); // Carrega a URL da imagem selecionada
       setImage(selectedImage); // Atualiza a imagem de perfil
     }
   };
 
   return (
-    <div className="container dark">
+    <div className="container">
       <div className="Titulo01">
         <h1>Editar Perfil</h1>
       </div>
       <div className="IconFoto">
+        {/* Imagem clicável para trocar foto de perfil */}
         <label htmlFor="fileInput" className="file-label">
           <img src={image} alt="Profile" className="file-image" />
         </label>
@@ -34,8 +36,8 @@ const App: React.FC = () => {
           id="fileInput"
           type="file"
           accept="image/*"
-          style={{ display: 'none' }}
-          onChange={handleImageChange}
+          style={{ display: 'none' }} // Esconde o input
+          onChange={handleImageChange} // Troca de imagem ao selecionar arquivo
         />
       </div>
       <div className="WriteFormsUm">
