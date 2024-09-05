@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SUSE:wght@493&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o modo escuro fixo */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #333; /* Cor de fundo escura */
+  color: #f1f1f1; /* Cor do texto clara */
+  padding: 20px;
+}
+
+.Titulo01 {
+  margin: 20px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 36px;
+  text-align: left;
+  font-size: 8px; /* Ajuste o tamanho do título conforme necessário */
+  margin-bottom: 20px;
+  color: #f1f1f1; /* Cor do texto do título */
+}
+
+.IconFoto {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.IconFoto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1.9px solid #f1f1f1; /* Borda clara em volta da imagem */
+  object-fit: cover;
+}
+
+/* Media query para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  .IconFoto img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .IconFoto img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .form-group {
+    padding: 10px;
+    margin-top: -20px;
+  }
+
+  .IconFoto img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .Titulo01 {
+    margin-top: 2px;
+    font-size: 10px;
+  }
+}
+
+.WriteFormsUm {
+  color: #f1f1f1; /* Cor do texto no formulário */
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-group input {
+  color: #f1f1f1; /* Cor do texto nos inputs */
+  background-color: #555; /* Fundo dos inputs escuro */
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #777; /* Borda mais escura */
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #B01818;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #b90d0d;
+}
+
+.file-label {
+  cursor: pointer;
+}
+
+.file-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
